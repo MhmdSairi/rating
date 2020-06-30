@@ -3,24 +3,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Star Rating | CodingNepal</title>
+    <title>Sliding Modal Box Style</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <body>
-    <div class="center">
-      <div class="stars">
-        <input type="radio" id="five" name="rate" value="5">
-        <label for="five"></label>
-        <input type="radio" id="four" name="rate" value="4">
-        <label for="four"></label>
-        <input type="radio" id="three" name="rate" value="3">
-        <label for="three"></label>
-        <input type="radio" id="two" name="rate" value="2">
-        <label for="two"></label>
-        <input type="radio" id="one" name="rate" value="1">
-        <label for="one"></label>
-        <span class="result"></span>
+    <div class="start-btn">
+      <a href="#">View Modal</a>
+    </div>
+<div class="center modal-box">
+      <div class="fas fa-times">
+</div>
+<div class="fas fa-envelope icon1">
+</div>
+<header>Don't miss updates from us!</header>
+      <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, suscipit, pers</p>
+<form action="">
+        <div class="fas fa-envelope icon2">
+</div>
+<input type="email" required placeholder="abc@example.com">
+        <button>Subscribe</button>
+      </form>
+<div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
       </div>
 </div>
-</body>
+<script>
+      $(document).ready(function(){
+        $('.start-btn').click(function(){
+          $('.modal-box').toggleClass("show-modal");
+          $('.start-btn').toggleClass("show-modal");
+        });
+        $('.fa-times').click(function(){
+          $('.modal-box').toggleClass("show-modal");
+          $('.start-btn').toggleClass("show-modal");
+        });
+      });
+    </script>
+
+  </body>
 </html>
